@@ -1,0 +1,164 @@
+.navbar-trans{
+	background-color:rgba(255,0,0,0) !important; /*Comment changer sans le important ???*/
+	/*box-shadow: 0px 10px 5px rgba(0,0,0,0.4);*/ /*Le remettre si on passe l'opacité du fond à 0.4*/
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #FFD8D6;
+}
+#active-link{
+    color: rgba(255,255,255,1); 
+}
+#navbar-brand{ /*A supprimer quand le logo sera sous forme d'image*/
+	color:white;
+	/*padding-left:20px;*/ /*Jouer avec le padding pour placement du logo*/
+}
+
+#hover-link::after, #active-link::after{
+	content:' ';
+	display:block;
+	width:0;
+	height:2px;
+	background:rgb(255,255,255);
+	transition:width 0.3s;
+}
+#hover-link:hover::after, #active-link:hover::after{
+	width:100%;
+	transition:width 0.3s;
+}
+#hover-link:hover{
+	color:white;
+}
+
+.header-img{
+	height:100vh;
+	min-height:500px;
+	background-image:url(bg-image3.jpg);
+	opacity:1;/*Tester après pour changer l'opacité sans passer par Photoshop*/
+	background-size:cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+
+.ctn{
+	padding-top:30vh;
+	color:#FFFF; /*Régler le problème d'illisibilité quand on est sur portable*/
+	text-shadow: #D1A3BD 0px 1px;
+}
+
+.custom-button{
+	background-color:#D1A3BD;
+	color:white;
+	width:30vh;
+	transition: width 0.5s;
+}
+
+.custom-button:hover{
+	width:35vh;
+	box-shadow: 0px 0px 10px #D1A3BD;
+}
+
+.ctn-project{
+	height:50vh;
+	min-height:300px;
+	border-radius:10px;
+	padding-left:7px;
+	padding-right:7px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.ctn-p{
+	background-color:white;
+	padding-bottom:40px;
+}
+.ctn-background1{
+	background-image:url(img/p2i.png);
+	background-size:cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+
+.txt-project{
+	text-align:left;
+}
+
+.txt-position{
+	padding-left:7px;
+	padding-right:15px;
+	position:absolute;
+	bottom:0;
+	color:red;
+}
+
+.txt-title{
+	color:white;
+}
+
+.underline-title{
+	background-color:red;
+	border-radius: 3px;
+	padding-left:5%;
+	margin-right:30%;
+}
+
+.underline-txt-box{
+	background-color:black;
+	border-radius:3px;
+	margin:5%;
+	padding-left:5px;
+	padding-right:3px;
+}
+
+.mesprojets{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.separator,.separator2{
+	border:none;
+	border-top:3px solid #D1A3BD;
+	margin-top:0px;
+	width:30%;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/*.separator2{
+	border:none;
+	border-top:3px solid #060A13;
+	margin-top:0px;
+	width:30%;
+}*/
+
+.ctn-c{
+	background-color:#96C6EE;
+	padding-bottom:30px;
+}
+
+.contactform{
+	border-radius:10px;
+	background-color:rgba(0,0,0,0.2);
+	width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
+	max-width:550px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+textarea{
+	max-width:100%;
+	width:100%;
+	height:100px;
+}
+
+input{
+	max-width:100%;
+	width:100%;
+}
+
+.submit-btn{
+	width:100%;
+}
+

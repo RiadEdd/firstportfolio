@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header-img">
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-light navbar-trans" id="navbar-trans">
+				<a class="navbar-brand" href="#" id="navbar-brand">Riad Eddahabi</a>
+				<!-- Responsive toggler --> 
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="liens collapse navbar-collapse" id="navbarMenu"> <!-- le id utilisé ici correspond au data target du bouton hamburger -->
+					<ul class ="navbar-nav ml-auto" id="test"> <!-- ml-auto (margin left) pour mettre à gauche (droite de l'utilisateur)-->
+						<li class="nav-item active">
+							<a class="nav-link active-link" href="#" id="active-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" id="hover-link">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" id="hover-link">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" id="hover-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container-fluid ctn">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-12" align="center">
+						<h2>Hi there !</h2>
+						<h1>My name's Riad.</h1>
+						<p>I'm a computer science student at INSA Lyon.</p>
+						</div>
+					<div class="col-lg-6 col-md-12" align="center">
+						<div class="row align-items-center">
+						<div class="col-lg-12 mb-2"><button class="btn custom-button">Download my resume</button></div> <!-- Problème avec ce bouton sur l'affichage sur mobile -->
+						<div class="col-lg-12"><button class="btn custom-button">LinkedIn</button></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<div class="container-fluid ctn-p">
+		<hr class="separator">
+		<div class="row mesprojets">
+			<div class="col-12 col-sm-12 col-lg-12 " align="center">
+				<h1>Mes projets</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-6 col-lg-3 " align="center">
+				<div class="ctn-project ctn-background1">
+					<div class="txt-position">
+						<div class="underline-title"><p class="txt-project txt-title">Estimation du temps d'attente</p></div>
+						<div class="underline-txt-box"><p class="txt-project">HTML, CSS, PHP, Java, Javascript, Knime, Google Charts</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 " align="center">
+				<div class="ctn-project ctn-background1">
+					<div class="txt-position">
+						<div class="underline-title"><p class="txt-project txt-title">Ce site</p></div>
+						<div class="underline-txt-box"><p class="txt-project">HTML, CSS, Javascript, Bootstrap</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 " align="center">
+				<div class="ctn-project ctn-background1">
+					<div class="txt-position">
+						<div class="underline-title"><p class="txt-project txt-title">Application gestion de trajets</p></div>
+						<div class="underline-txt-box"><p class="txt-project">C++</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 " align="center">
+				<div class="ctn-project ctn-background1">
+					<div class="txt-position">
+						<div class="underline-title"><p class="txt-project txt-title">Création graphique</p></div>
+						<div class="underline-txt-box"><p class="txt-project">Photoshop, Illustrator, Cinema4D</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="container-fluid ctn-c">
+		<hr class="separator2">
+		<div class="row contact">
+			<div class="col-12 col-sm-12 col-lg-12 " align="center">
+				<h1 class="mb-3">Contactez-moi</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-sm-12 col-lg-12 " align="center">
+				<div class="contactform">
+					<!--<h3>Contact rapide</h3>-->
+					<h5>Envoyez-moi directement un mail !</h5>
+					<fieldset class="mb-2 mt-3"><input placeholder="Votre nom" type="text" tabindex="1" required autofocus></fieldset>
+					<fieldset class="mb-2"><input placeholder="Votre adresse mail" type="email" tabindex="2" required></fieldset>
+					<fieldset class="mb-2"><textarea placeholder="Ecrivez votre message ici" tabindex="4" required></textarea></fieldset>
+					<fieldset class="mb-2"><button class="submit-btn" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button></fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html> 
